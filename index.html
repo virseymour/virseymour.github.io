@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css">
 <link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 <link rel="icon" 
@@ -11,199 +12,267 @@
       href="\virseymour.github.io\favicon.png">
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Cairo", sans-serif}
-div.pad{padding-top: 22px}
-h2.pad{padding-top: 16px}
 
-.accordion {
-  background-color: #fff;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  transition: 0.4s;
+body, html {
+  height: 100%;
+  line-height: 1.8;
+  color: dimgrey;
 }
 
-.active, .accordion:hover {
-  background-color: w3-amber;
+/* Full height header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+/*  background-image: url("/images/frontpage.jpg"); */
+  background-color: #253e5b;
+  min-height: 100%;
 }
 
-.accordion:after {
-  content: '\002B';
-  color: #777;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
+.w3-bar .w3-button {
+  padding: 16px;
+  
 }
-
-.active:after {
-  content: "\2212";
-}
-
-.panel {
-  padding: 0 18px;
-  background-color: white;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-}
-
 </style>
-<body class="w3-light-grey">
+<body>
 
-<!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
-
-  <!-- The Grid -->
-  <div class="w3-row-padding">
-  
-    <!-- Left Column -->
-	<div class="w3-third">
-    
-    	<div class="w3-white w3-text-grey w3-card-4">
-        	<div class="w3-display-container">
-          	<img src="\virseymour.github.io\profile-picture-sm.jpg" style="width:100%" alt="Profile Photo">
-          	<div class="w3-display-bottomright w3-container w3-text-white">
-            	<h1>Virginia Seymour</h1>
-          	</div>
-        	</div>
-        	<div class="w3-container">
-            <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-amber"></i>Researcher & Analyst</p>
-            <p><i class="fas fa-map-marker-alt fa-fw w3-margin-right w3-large w3-text-amber"></i>Austin, TX</p>
-            <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-amber"></i>virseymour@gmail.com</p>
-            <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-amber"></i>+1 803.381.4532</p>
-            <hr>
-
-            <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-amber"></i>Skills</b></p>
-            <p><b>Python</b> | data wrangling & analysis with pandas & Plotly</p>
-            <div class="w3-light-grey w3-round-xlarge w3-small">
-            	<div class="w3-container w3-center w3-round-xlarge w3-amber" style="width:75%">75%</div>
-         	</div>
-          	<p><b>SQL</b> | queries & database managment</p>
-         	<div class="w3-light-grey w3-round-xlarge w3-small">
-            	<div class="w3-container w3-center w3-round-xlarge w3-amber" style="width:85%">85%</div>
-          	</div>
-		<p><b>Excel</b> | macros, VBA, formulas & pivoting</p>
-          	<div class="w3-light-grey w3-round-xlarge w3-small">
-            	<div class="w3-container w3-center w3-round-xlarge w3-amber" style="width:80%">80%</div>
-          	</div>
-          	<p><b>Tableau</b> | data analysis & visualization </p>
-          	<div class="w3-light-grey w3-round-xlarge w3-small">
-            	<div class="w3-container w3-center w3-round-xlarge w3-amber" style="width:75%">75%</div>
-         	</div>
-          	<p><b>Other Skills</b> | Ontology design, database design, Adobe Creative Suite, & Photography</p>
-          	<div class="w3-light-grey w3-round-xlarge w3-small">
-            	<div class="w3-container w3-center w3-round-xlarge w3-amber" style="width:75%">75%</div>
-          	</div>
-          	<p><b>Project Management</b> | Gantt charts WBS, project networks, & Agile development</p>
-          	<div class="w3-light-grey w3-round-xlarge w3-small">
-            	<div class="w3-container w3-center w3-round-xlarge w3-amber" style="width:60%">60%</div>
-          	</div>
-          	<br>
-
-          	<p class="w3-large w3-text-theme"><b><i class="fas fa-globe-americas fa-fw w3-margin-right w3-text-amber"></i>Languages</b></p>
-          	<p>English</p>
-          	<div class="w3-light-grey w3-round-xlarge">
-            	<div class="w3-round-xlarge w3-amber" style="height:24px;width:100%"></div>
-          	</div>
-          	<p>עברית</p>
-          	<div class="w3-light-grey w3-round-xlarge">
-            	<div class="w3-round-xlarge w3-amber" style="height:24px;width:55%"></div>
-          	</div>
-          	<p>Español</p>
-          	<div class="w3-light-grey w3-round-xlarge">
-            	<div class="w3-round-xlarge w3-amber" style="height:24px;width:25%"></div>
-          	</div>
-          	<br>
-        	</div>
-      	</div><br>
-      	<div class="w3-white w3-text-grey w3-card-4">
-			<div class="w3-container">
-				<div class="w3-center pad"><h2 class="w3-text-grey"><button class="w3-button w3-hover-grey w3-round-large w3-hover-text-white" href="https://public.tableau.com/profile/virginiaseymour#!/" target="_blank">View Portfolio <i class="fas fa-folder-open fa-fw w3-margin-right w3-xxlarge w3-text-amber"></i></button></h2></div>
-        	</div>
-        	<br>
-		</div>
-
-    <!-- End Left Column -->
-    </div>
-
-    <!-- Right Column -->
-    <div class="w3-twothird">
-		<div class="w3-container w3-card w3-white">
-			<h2 class="w3-text-grey pad"><i class="fas fa-user-circle fa-fw w3-margin-right w3-xxlarge w3-text-amber"></i>About</h2>
-          	<p>Due to graduate December 2019, I developed data wrangling, analysis, and visualisation skills in my course and put them to practice in a university-affiliated archive and library. My diverse education positions me to effectively communicate with clients and execute projects in a variety of languages and software. Passionate about educational and information program evaluation, I am eager to support client assessment needs with project management and data analysis experience. I am keen to mobilise my skills and teaching experience to empower clients to utilise and understand their data. </p><br>
-		</div>
-			</div>
-
-	<div class="w3-twothird"><br>
-      	<div class="w3-container w3-card w3-white">
-        	<h2 class="w3-text-grey pad"><i class="fas fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-amber"></i>Education</h2>
-        	<button class="accordion"><h5>University of Texas at Austin</h5><h6 class="w3-text-amber"><i class="fas fa-calendar-alt fa-fw w3-margin-right"></i>2018 - 2019</h6>Master of Science in Information Studies</button>
-			<div class="panel">
-  				<p>Selected courses: Data Analytics, Data Wrangling, Database Management, Data Storytelling, Competitive Business Intelligence, Understanding Research, Designing Ontologies<br><br>While completing my graduate degree, I undertook class projects that advanced my abilities to acquire, organise, and analyse datasets. I was exposed to a variety of languages (general and domain-specific) and software. I particularly focused on familiarising myself with visualisation tools, both software (like Tableau) and Python libraries (like pandas and Plotly). I also gained proficiency in database and ontology design, which enriched my practical experience with data management.</p>
-			</div>
-        	<button class="accordion"><h5>University of Pennsylvania</h5><h6 class="w3-text-amber"><h6 class="w3-text-amber"><i class="fas fa-calendar-alt fa-fw w3-margin-right"></i>2012 - 2016</h6>Bachelor of Art in Art History<br>Bachelor of Art in Gender, Sexuality and Women's Studies</button>
-			<div class="panel">
-  				<p>My undergraduate degrees in the humanities honed my ability to communicate clearly and effectively in all modes. I have spent my time in graduate school advancing these skills, particularly in oral communication and presentation delivery. Similarly, close looking, contextualisation, and attention to fine detail were core skills from my Art History course that I apply to all of my projects in analysis and visualisation.</p><br>
-			</div>
-		</div>
-	</div>
-
-	<div class="w3-twothird"><br>
-    	<div class="w3-container w3-card w3-white">
-        	<h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-amber"></i>Professional Experience</h2>
-        	<div class="w3-container">
-          		<h5 class="w3-opacity"><b>Research Associate | Harry Ransom Center</b></h5>
-          		<h6 class="w3-text-amber"><i class="fas fa-calendar-alt fa-fw w3-margin-right"></i>Aug 2018 - <span class="w3-tag w3-amber w3-round">Current</span></h6>
-          		<p>Manage client queries. Design assessment projects for educational initiatives. Collect, wrangle, and analyze data to support program development with actionable insights.</p>
-          		<hr>
-        	</div>
-        	<div class="w3-container">
-          		<h5 class="w3-opacity"><b>Project Assistant | University of Pennsylvania Museum</b></h5>
-          		<h6 class="w3-text-amber"><i class="fas fa-calendar-alt fa-fw w3-margin-right"></i>Jan 2015 - Aug 2016</h6>
-          		<p>Transformed, input, and managed research data. Worked with a small team that handled multiple simultaneous projects.</p>
-          		<hr>
-        	</div>
-        	<div class="w3-container">
-          		<h5 class="w3-opacity"><b>Program Assistant | Kelly Writers House</b></h5>
-          		<h6 class="w3-text-amber"><i class="fas fa-calendar-alt fa-fw w3-margin-right"></i>Aug 2012 - Jan 2015</h6>
-          		<p>Collaboratively planned and executed progamming for a non-profit event space. Designed on-brand print advertisements and led letterpress printing and workshops.</p><br>
-        	</div>
-    	</div>
-	</div>
-
-
-    <!-- End Right Column -->
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide w3-hover-text-red w3-hover-white" style="color:dimgrey">PORTFOLIO</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button w3-hover-text-red w3-hover-white" style="color:dimgrey"><i class="far fa-address-book"></i> ABOUT</a>
+      <a href="#work" class="w3-bar-item w3-button w3-hover-text-red w3-hover-white" style="color:dimgrey"><i class="fa fa-th"></i>  WORK</a>
+      <a href="#resume" class="w3-bar-item w3-button w3-hover-text-red w3-hover-white" style="color:dimgrey"><i class="far fa-file"></i> RESUME</a>
     </div>
     
-  <!-- End Grid -->
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
   </div>
-  
-  <!-- End Page Container -->
 </div>
 
-<footer class="w3-container w3-amber w3-center w3-margin-top"><br>
-  <i class="fab fa-linkedin w3-hover-opacity" href="https://www.linkedin.com/in/vseymour/" target="_blank"></i>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">RESUME</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">Virginia Seymour</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Virginia Seymour</span><br>
+    <span class="w3-large">Tagline about how great I am at data analysis and visualization.</span>
+    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-hover-red">all aboard, explorers</a></p>
+  </div> 
+  <div class="w3-display-bottomleft w3-text-white w3-large" style="padding:24px 48px">
+    <a href=https://github.com/virseymour target=_blank><i class="fab fa-github w3-hover-text-red"></i></a>&nbsp &nbsp
+    <a href=https://www.linkedin.com/in/vseymour target=_blank><i class="fab fa-linkedin-in w3-hover-text-red"></i></a>&nbsp &nbsp
+    <a href=https://public.tableau.com/profile/virginiaseymour><i class="fas fa-plus w3-hover-text-red"></i></a>&nbsp &nbsp
+    <a href=https://www.kaggle.com/vseymour><i class="fab fa-kaggle w3-hover-text-red"></i></a>
+  </div>
+</header>
+
+<!-- About Section -->
+<div class="w3-container" style="padding:100px 16px" id="about">
+  <h3 class="w3-center">ABOUT</h3>
+  <p class="w3-center w3-large">highlights</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+      <div class="w3-quarter">
+      <i class="fas fa-lightbulb w3-margin-bottom w3-jumbo" style="color:#253e5b"></i>
+      <p class="w3-large">Critical Thinking</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="far fa-chart-bar w3-margin-bottom w3-jumbo w3-center"  style="color:#253e5b"></i>
+      <p class="w3-large">Visualization</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fas fa-paint-roller w3-margin-bottom w3-jumbo" style="color:#253e5b"></i>
+      <p class="w3-large">Design</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fas fa-bullhorn w3-margin-bottom w3-jumbo"  style="color:#253e5b"></i>
+      <p class="w3-large">Presentation</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Promo Section - "We know design"
+<div class="w3-container w3-light-grey" style="padding:128px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>We know design.</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore.</p>
+      <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Works</a></p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="/w3images/phone_buildings.jpg" alt="Buildings" width="700" height="394">
+    </div>
+  </div>
+</div>
+-->
+
+<!-- Promo Section "Statistics"
+<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">14+</span>
+    <br>Partners
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">55+</span>
+    <br>Projects Done
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">89+</span>
+    <br>Happy Clients
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">150+</span>
+    <br>Meetings
+  </div>
+</div> 
+-->
+
+<!-- Skills Section -->
+<div class="w3-container w3-light-grey w3-text-grey" style="padding:100px 16px" id="resume">
+  <div class="w3-row-padding">
+  
+    <div class="w3-col m5">
+      <h3>SKILLS</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+    
+    <div class="w3-col m7">
+    
+      <p class="w3-wide"><i class="fas fa-plus w3-margin-right" style="color:#253e5b"></i>Tableau</p>
+      <div class="w3-light-grey">
+        <div class="w3-container w3-red w3-center" style="width:90%">daily</div>
+      </div>
+    
+      <p class="w3-wide"><i class="fas fa-database w3-margin-right" style="color:#253e5b"></i>SQL</p>
+      <div class="w3-light-grey">
+        <div class="w3-container w3-red w3-center" style="width:80%">often</div>
+      </div>
+      
+      <p class="w3-wide"><i class="fas fa-keyboard w3-margin-right" style="color:#253e5b"></i>Python | pandas & plotly</p>
+      <div class="w3-light-grey">
+        <div class="w3-container w3-red w3-center" style="width:90%">daily</div>
+      </div>
+      
+      <p class="w3-wide"><i class="fas fa-sitemap w3-margin-right" style="color:#253e5b"></i>database & ontology design</p>
+      <div class="w3-light-grey">
+        <div class="w3-container w3-red w3-center" 
+style="width:70%">well-versed</div>
+      </div> 
+	</div> 
+</div><br>
+  <div class="w3-row-padding">
+	<h3>EDUCATION</h3>
+          <h5><span class="w3-text-red"><b>University of Texas at Austin</b></span> | Master of Science in Information Studies</h5>
+          <h6><i class="fas fa-calendar-alt w3-margin-right" style="color:#253e5b"></i>2018-2019</h6>
+  				<p>Selected courses: Data Analytics, Data Wrangling, Database Management, Data Storytelling, Competitive Business Intelligence, Understanding Research, Designing Ontologies
+		  <h5><span class="w3-text-red"><b>University of Pennsylvania</b></span> | Bachelor of Arts in Art History </h5>
+          <h6><i class="fas fa-calendar-alt w3-margin-right" style="color:#253e5b"></i>2012-2016</h6>
+          		<p>Honors: Summa Cum Laude, Phi Beta Kappa, Dean's List, Hart Thesis Award</p>
+  </div>
+</div>
+
+<!-- Work Section -->
+<div class="w3-container" style="padding:100px 16px" id="work">
+  <h3 class="w3-center">MY WORK</h3>
+  <p class="w3-center w3-large">Sample projects</p>
+
+  <div class="w3-row-padding" style="margin-top:56px">
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_mic.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="image">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_phone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="image">
+    </div>
+  </div>
+  
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6">
+      <a href="https://www.w3schools.com"><img src="/w3images/tech_drone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="im age"></a>
+    </div>
+    <div class="w3-col l3 m6">
+      <a href="https://www.w3schools.com"><img src="/w3images/tech_drone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="im age"></a>
+    </div>
+    
+  </div>
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6">
+      <a href="https://www.w3schools.com"><img src="/w3images/tech_drone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="im age"></a>
+    </div>
+    <div class="w3-col l3 m6">
+      <a href="https://www.w3schools.com"><img src="/w3images/tech_drone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="im age"></a>
+    </div>
+  </div>
+  
+  <div class="w3-row-padding w3-section">  
+    <div class="w3-col l3 m6">
+      <a href="https://www.w3schools.com"><img src="/w3images/tech_drone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="im age"></a>
+    </div>
+    <div class="w3-col l3 m6">
+      <a href="https://www.w3schools.com"><img src="/w3images/tech_drone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="im age"></a>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+-->
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px">
+  <h3 class="w3-center">CONTACT</h3>
+  <p class="w3-center w3-large">Lets get in touch. Send me a message:</p>
+  <div style="margin-top:48px">
+    <p><a href="https://www.google.com/maps/place/Austin,+TX/@30.3076859,-97.8938295,11z/data=!3m1!4b1!4m5!3m4!1s0x8644b599a0cc032f:0x5d9b464bd469d57a!8m2!3d30.267153!4d-97.7430608" target="_blank"><i class="fas fa-globe-americas fa-fw w3-xxlarge w3-margin-right w3-hover-text-red" style="color:#253e5b"></i></a> Austin, TX</p>
+    <p><a href="tel:+1 803-381-4532"><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right w3-hover-text-red" style="color:#253e5b"></i></a> Phone: +1 803 381 4532</p>
+    <p><a href="mailto:contact@virginiaseymour.com? subject=Portfolio Inquiry"><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right w3-hover-text-red" style="color:#253e5b"></i></a>contact@virginiaseymour.com</p>
+    <br>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-padding-24 w3-flat-midnight-blue">
+  <a href="#home" class="w3-button w3-light-grey w3-hover-red"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-red">w3.css</a></p>
 </footer>
-
+ 
 <script>
-var acc = document.getElementsByClassName("accordion");
-var i;
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight){
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  });
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
 }
 </script>
 
