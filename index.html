@@ -19,6 +19,27 @@ body, html {
   color: dimgrey;
 }
 
+.button {
+  background-color: white; /* Green */
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.2s; /* Safari */
+  transition-duration: 0.2s;
+}
+
+.button:hover {
+  background-color: #f04848;
+  color: white;
+}
+	
+	
 /* Full height header */
 .bgimg-1 {
   background-position: center;
@@ -32,20 +53,14 @@ body, html {
   padding: 16px;
 }
 
-.vs-main-button {
-  background-color:white;
-  background-repeat:no-repeat;
-  border: none;
-  cursor:pointer;
-  overflow: hidden;
-  outline:none;
-  color:black;
-}
-
-.vs-main-button:hover {
-  background-color:#D0484C;
+.w3-button:hover {
+  background-color:w3-flat-alizarin;
   color:white;
 }
+	
+a:hover{
+ color: w3-flat-alizarin;
+	}
 	
 </style>
 <body>
@@ -53,7 +68,7 @@ body, html {
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="#home" class="w3-bar-item w3-button w3-wide w3-hover-text-red w3-hover-white" style="color:dimgrey">PORTFOLIO</a>
+    <a href="#home" class="w3-bar-item w3-button w3-wide w3-hover-white" style="color:dimgrey">PORTFOLIO</a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
       <a href="#about" class="w3-bar-item w3-button w3-hover-white" style="color:dimgrey"><i class="far fa-address-book"></i> ABOUT</a>
@@ -85,7 +100,7 @@ body, html {
   <div class="w3-display-right w3-text-white w3-right-align" style="padding:48px">
     <span class="w3-jumbo">Virginia Seymour</span><br>
     <span class="w3-large">Tagline about how great I am at data analysis and visualization.</span>
-    <p><a href="#about" class="w3-button w3-padding-large vs-main-button">all aboard, explorers</a></p>
+    <p><a href="#about" class="button">all aboard, explorers</a></p>
   </div> 
   <div class="w3-display-bottomright w3-text-white w3-large" style="padding:24px 48px">
     <a href=https://github.com/virseymour target=_blank><i class="fab fa-github w3-hover-text-red"></i></a>&nbsp &nbsp
