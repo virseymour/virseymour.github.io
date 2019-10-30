@@ -10,6 +10,7 @@
 <link rel="icon" 
       type="image/png" 
       href="icon.png">
+	
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Cairo", sans-serif}
 
@@ -19,8 +20,9 @@ body, html {
   color: dimgrey;
 }
 
+/* main button */	
 .button {
-  background-color: white; /* Green */
+  background-color: white;
   border: none;
   color: black;
   padding: 16px 32px;
@@ -33,12 +35,12 @@ body, html {
   -webkit-transition-duration: 0.2s; /* Safari */
   transition-duration: 0.2s;
 }
-
 .button:hover {
   background-color: #f04848;
   color: white;
 }
-
+	
+/* custom color link hover */
 a:hover {
 color: #f04848;
 } 
@@ -52,47 +54,45 @@ color: #f04848;
   min-height: 100%;
 }
 
-.w3-bar .w3-button {
-  padding: 16px;
-}
-
+/* Adjustments to w3 CSS */	
+.w3-bar .w3-button {padding: 16px;}
 .w3-hover-text-red:hover{color: #f04848!important}
 .w3-red{color: #f04848!important}
 
-	
 </style>
+	
 <body>
 
-<!-- Navbar (sit on top) -->
+<!--Navbar -->	
+<!--Home button -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
     <a href="#home" class="w3-bar-item w3-button w3-wide w3-hover-white" style="color:dimgrey">VIRGINIA SEYMOUR</a>
-    <!-- Right-sided navbar links -->
+<!--DESKTOP: Right-side links-->
     <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button w3-hover-white w3-hover-text-red" style="color:dimgrey"><i class="far fa-address-book"></i> ABOUT</a>
-      <a href="#work" class="w3-bar-item w3-button w3-hover-white w3-hover-text-red" style="color:dimgrey"><i class="fa fa-th"></i>  WORK</a>
-      <a href="#resume" class="w3-bar-item w3-button w3-hover-white w3-hover-text-red" style="color:dimgrey"><i class="far fa-file"></i> RESUME</a>
-      <a href="#contact" class="w3-bar-item w3-button w3-hover-white w3-hover-text-red" style="color:dimgrey"><i class="far fa-paper-plane"></i> CONTACT</a>	    
+      <a href="#about" class="w3-bar-item w3-button w3-hover-white w3-hover-text-red" style="color:dimgrey"><i class="far fa-address-book"></i>ABOUT</a>
+      <a href="#work" class="w3-bar-item w3-button w3-hover-white w3-hover-text-red" style="color:dimgrey"><i class="fa fa-th"></i>WORK</a>
+      <a href="#resume" class="w3-bar-item w3-button w3-hover-white w3-hover-text-red" style="color:dimgrey"><i class="far fa-file"></i>RESUME</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-hover-white w3-hover-text-red" style="color:dimgrey"><i class="far fa-paper-plane"></i>CONTACT</a>	    
     </div>
-    
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+<!--MOBILE: Menu icon-->
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
       <i class="fa fa-bars"></i>
     </a>
   </div>
 </div>
 
-<!-- Sidebar on small screens when clicking the menu icon -->
+<!--MOBILE: Sidebar on menu icon click-->
 <nav class="w3-sidebar w3-bar-block w3-red w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-white w3-button">ABOUT</a>
-  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
-  <a href="#resume" onclick="w3_close()" class="w3-bar-item w3-button">RESUME</a>
-  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-text-white w3-button">ABOUT</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-text-white w3-button">WORK</a>
+  <a href="#resume" onclick="w3_close()" class="w3-bar-item w3-text-white w3-button">RESUME</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-text-white w3-button">CONTACT</a>
 </nav>
 
+<!--Frontpage-->	
 <!-- Header with full-height image -->
-	
 <header class="bgimg-1 w3-display-container" id="home">
 <div class="w3-hide-small">
   <div class="w3-display-right w3-text-white w3-right-align" style="padding:48px">
