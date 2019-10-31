@@ -84,63 +84,72 @@ color: #f04848;
 
 <!--MOBILE: Sidebar on menu icon click-->
 <nav class="w3-sidebar w3-bar-block w3-red w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-text-white w3-button w3-large w3-padding-16">Close ×</a>
   <a href="#about" onclick="w3_close()" class="w3-bar-item w3-text-white w3-button">ABOUT</a>
   <a href="#work" onclick="w3_close()" class="w3-bar-item w3-text-white w3-button">WORK</a>
   <a href="#resume" onclick="w3_close()" class="w3-bar-item w3-text-white w3-button">RESUME</a>
   <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-text-white w3-button">CONTACT</a>
 </nav>
 
-<!--Frontpage-->	
-<!-- Header with full-height image -->
+	
+<!--Header-->	
 <header class="bgimg-1 w3-display-container" id="home">
+
+<!--DESKTOP: main page-->
 <div class="w3-hide-small">
   <div class="w3-display-right w3-text-white w3-right-align" style="padding:48px">
     <span class="w3-jumbo">Virginia Seymour</span><br>
     <span class="w3-large">Information professional really into thoughtful data-analysis.</span>
     <p><a href="#about" class="button">all aboard, explorers</a></p>
-  </div> 
+  </div>
+<!--DESKTOP: social icons-->	
   <div class="w3-display-bottomright w3-text-white w3-large" style="padding:24px 48px">
     <a href=https://github.com/virseymour target=_blank><i class="fab fa-github w3-hover-text-red"></i></a>&nbsp &nbsp
     <a href=https://www.linkedin.com/in/vseymour target=_blank><i class="fab fa-linkedin-in w3-hover-text-red"></i></a>&nbsp &nbsp
     <a href=https://public.tableau.com/profile/virginiaseymour><i class="fas fa-plus w3-hover-text-red"></i></a>&nbsp &nbsp
     <a href=https://www.kaggle.com/vseymour><i class="fab fa-kaggle w3-hover-text-red"></i></a>
   </div>
-	</div>	
-	
+</div>	
+
+<!--MOBILE: main page-->	
 <div class="w3-hide-medium w3-hide-large">
   <div class="w3-display-bottomleft w3-text-white" style="padding:24px">
     <span class="w3-xxlarge">Virginia Seymour</span><br>
     <span class="w3-large">Information professional really into thoughtful data-analysis.</span>
     <p><a href="#about" class="button">all aboard, explorers</a></p>
+<!--MOBILE: icons, attached to tagline block-->    
     <a href=https://github.com/virseymour target=_blank><i class="fab fa-github w3-hover-text-red"></i></a>&nbsp &nbsp
     <a href=https://www.linkedin.com/in/vseymour target=_blank><i class="fab fa-linkedin-in w3-hover-text-red"></i></a>&nbsp &nbsp
     <a href=https://public.tableau.com/profile/virginiaseymour><i class="fas fa-plus w3-hover-text-red"></i></a>&nbsp &nbsp
     <a href=https://www.kaggle.com/vseymour><i class="fab fa-kaggle w3-hover-text-red"></i></a>
   </div>
-	</div>	
+</div>	
+
 </header>
 
-<!-- About Section -->
+	
+<!--About-->
 <div class="w3-container" style="padding:128px 16px" id="about">
   <h3 class="w3-center">ABOUT</h3>
-  <p class="w3-center w3-large">highlights</p>
   <div class="w3-row-padding w3-center" style="margin-top:64px">
-      <div class="w3-quarter">
-      <i class="fas fa-lightbulb w3-margin-bottom w3-jumbo" style="color:#f04848"></i>
-      <p class="w3-large">Research Design</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-    </div>
     <div class="w3-quarter">
-      <i class="far fa-chart-bar w3-margin-bottom w3-jumbo w3-center"  style="color:#f04848"></i>
+      <i class="far fa-chart-bar w3-margin-bottom w3-jumbo w3-center" style="color:#f04848"></i>
       <p class="w3-large">Program Evaluation</p>
       <p>Demonstrated experience conducting evaluability assessments, designing evaluation plans, and delivering evaluation reports to support program improvement.</p>
     </div>
+    <div class="w3-container w3-hide-large w3-hide-medium"><p></p></div>		  
     <div class="w3-quarter">
       <i class="fas fa-paint-roller w3-margin-bottom w3-jumbo" style="color:#f04848"></i>
       <p class="w3-large">Data Visualization</p>
       <p>Adept at producing accessible data visualizations build on a strong foundation in art and design.</p>
     </div>
+    <div class="w3-container w3-hide-large w3-hide-medium"><p></p></div>	  
+    <div class="w3-quarter">
+      <i class="fas fa-lightbulb w3-margin-bottom w3-jumbo" style="color:#f04848"></i>
+      <p class="w3-large">Research Design</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-container w3-hide-large w3-hide-medium"><p></p></div>	  
     <div class="w3-quarter">
       <i class="fas fa-bullhorn w3-margin-bottom w3-jumbo"  style="color:#f04848"></i>
       <p class="w3-large">Teaching & Presentation</p>
@@ -149,16 +158,20 @@ color: #f04848;
   </div>
 </div>
 
-<!--- experience --->	
+	
+<!---Resume--->	
 <div class="w3-container w3-light-grey w3-text-grey w3-row-padding" style="padding:128px 16px" id="resume">
-  <!--- <div class="w3-row-padding"> ---> <div>
-	<h3 class="w3-hide-small">BACKGROUND</h3>		  
+<div>
+<!--DESKTOP: background and skills-->
+  <h3 class="w3-hide-small">BACKGROUND</h3>		  
     <div class="w3-col w3-row-padding w3-hide-small" style="width:50%">
-      <p>Here are going to be a few lines of text about my background in art and design, my coursework and work experience in data analysis/program managment, how I apply my skills, what I do with them and all that.</p>
-      <p>Maybe something about how i love lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore. 
-	 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore really til this is as long as the skills.</p>
+      <p>Here are going to be a few lines of text about my background in art and design, my coursework and work experience 
+	 in data analysis/program managment, how I apply my skills, what I do with them and all that.</p>
+      <p>Maybe something about how i love lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+	 incididunt ut labore et dolore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+	 incididunt ut labore et dolore really til this is as long as the skills.</p>
     </div>
-    <div class="w3-col w3-hide-small w3-container w3-dimgray" style="width:5%"><p>.</p></div>
+    <div class="w3-col w3-hide-small w3-container w3-dimgray" style="width:5%"><p></p></div>
     <div class="w3-rest w3-hide-small">
       <p><i class="fas fa-desktop w3-margin-right" style="color:#f04848"></i><b>software </b> | Tableau, Excel, OpenRefine, Adobe CC (InDesign, Photoshop, Illustrator)</p>
       <p><i class="fas fa-cogs w3-margin-right" style="color:#f04848"></i><b>machine learning & data mining</b> | Weka, RapidMiner, Knime</p>
